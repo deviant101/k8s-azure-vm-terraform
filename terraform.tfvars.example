@@ -1,0 +1,26 @@
+# Example Terraform variables file
+# Copy this file to terraform.tfvars and modify as needed
+
+# Resource group name
+resource_group_name = "kube-cluster-rg"
+
+# Azure region
+location = "East US"
+
+# Prefix for resource names
+prefix = "kubecluster"
+
+# VM size (Standard_B2s is good for testing, Standard_D2s_v3 for production)
+vm_size = "Standard_B2s"
+
+# Admin username for VMs
+admin_username = "azureuser"
+
+# Path to your SSH public key
+ssh_public_key_path = "~/.ssh/id_rsa.pub"
+
+# Ubuntu version (22.04 or 24.04)
+ubuntu_version = "22.04"
+
+# Environment tag
+environment = "development"
